@@ -1,13 +1,22 @@
-<script>
+<script lang='ts'>
   import { pb } from "../db";
   import Message from "./Message.svelte";
 
   export let username;
-  let messages = [];
+
+  // Each row of db
+  interface Message {
+    from?: string;
+    to?: string;
+    text?: string;
+    created?: string
+  }
+
+  let messages: Message[] = [];
 
   // When messages changes append to the UI
   pb.collection('chat').subscribe("*", (e) => {
-    messages = [...messages, e.record];
+    messages = [...messages, e.record<Message>];
   });
 
   // alternatively you can also fetch all records at once via getFullList:
