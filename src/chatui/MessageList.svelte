@@ -18,7 +18,7 @@
   let promise = getMessages();
 </script>
 
-<div class="relative w-full p-6 overflow-y-auto h-[30rem] scrollbar-hide">
+<div class="relative w-full p-6 overflow-y-auto scrollbar-hide h-[calc(100%-8rem)]">
   {#await promise}
     Loading...
   {:then}

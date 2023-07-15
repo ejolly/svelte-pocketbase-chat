@@ -8,7 +8,7 @@
   const formattedTime = `${new Date(message.created).toLocaleTimeString()}`;
 
   function scrollIntoView(node) {
-    node.scrollIntoView({ block: "end", inline: "nearest" });
+    node.scrollIntoView({ block: "start", inline: "nearest", behavior: "smooth" });
   }
 
   $: flyfrom = you ? { x: 100 } : { x: -100 };

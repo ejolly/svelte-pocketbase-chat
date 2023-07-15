@@ -7,9 +7,9 @@
 
 </script>
 
-<div class="max-w-screen-md mx-auto">
+<div class="max-w-full md:max-w-4xl md:mx-auto">
   <div>
-    <div class="w-full">
+    <div class="w-full h-screen">
       <ProfileHeader bind:username={$username} />
       <MessageList bind:username={$username} />
       <Input bind:username={$username}/>

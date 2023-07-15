@@ -20,7 +20,7 @@
 </script>
 
 <div
-  class="flex items-center justify-between w-full p-3 border-t border-gray-300"
+  class="flex items-center justify-between w-full md:max-w-4xl md:mx-auto p-3 border-t border-gray-300 fixed inset-x-0 bottom-0 h-20 bg-gray-200"
 >
   <button>
     <svg

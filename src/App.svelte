@@ -14,7 +14,4 @@
       <LoginForm />
     {/if}
   </main>
-  <footer class="fixed inset-x-0 bottom-0 h-10 text-white bg-black">
-    Built with Svelte + Pocketbase
-  </footer>
 </div>
